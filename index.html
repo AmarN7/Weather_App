@@ -3,22 +3,53 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> Weather App</title>
-   
+	
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <script type="text/javascript" src="script.js"></script>
+    <title> Weather App</title>
+
 </head>
 <body> 
 	<div class="mdiv">
 		<div class="container">
-			<h3>WEATHER FORECAST</h3>
-			<form>
-				<input type="text" id="city_name"
-				placeholder="Enter a City">
-				<button type="button" onclick="fetchcity()"><img src="https://i.pinimg.com/736x/bc/b2/07/bcb20762de9e65d6d8528466db37abe1.jpg" alt="search icin" height="20px"></button>
-			</form>
+			<h3 class="heading">WEATHER FORECAST</h3>
+			<form> 
+				<div class="componet">
+					<div>
+				    <input type="text" name="city" id="city_name" placeholder="Enter a City" autofocus>
+				</div>
+				<div class="btn">
+				<button type="button"  class="srch_btn" onclick="fetchCity()"><img src="https://i.pinimg.com/736x/bc/b2/07/bcb20762de9e65d6d8528466db37abe1.jpg" alt="search icon" height="20px"></button>
+			</div>
 		</div>
-	</div>
+		<br>
+		<div align="center" style="margin-top: -05px;">
+			<img src="https://cdn3d.iconscout.com/3d/premium/thumb/weather-app-6607489-5501995.png?f=webp" height="100px">
+		</div>
+		<div align="center" style="margin-top: 20px">
+			<span id="city">CITY NAME</span>
+			<br>
+			<span class="measurement" id="temp">0°C</span>
+		</div>
+		<div align="center" style="margin-top:20px">
+			<table width="100%" cellpadding="10px">
+				<tr align="center">
+					<td>
+						<h2 class="headings">WIND SPEED</h2>
+						<span class="measurement" id="wind_speed">0 km/hr
+						</span>
+					</td>
+					<td>
+						<h2 class="headings">HUMIDITY</h2>
+						<span class="measurement" id="humidity">0 g/kg</span>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</form>
+</div>
+</div>
+
 </body>
 </html>
